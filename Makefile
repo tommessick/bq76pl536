@@ -1,4 +1,4 @@
-DRIVER = spike
+DRIVER = bq76pl536
 
 ifneq ($(KERNELRELEASE),)
     obj-m := $(DRIVER).o
@@ -9,7 +9,7 @@ default:
 ifeq ($(strip $(KERNELDIR)),)
 	$(error "KERNELDIR is undefined!")
 else
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules 
+	$(MAKE) -C $(KERNELDIR) CROSS_COMPILE=${CC} M=$(PWD) modules
 endif
 
 

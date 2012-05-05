@@ -1,0 +1,13 @@
+# Run this to cross compile for a system with an arm processor
+#
+# Where to find the kernel tree
+# This will need to be edited for your system
+# This directory contains directories arch Documentation Drivers etc
+export KERNELDIR=~/devel/beagle/linux-rcn/linux-dev/KERNEL
+# The prefix for your gnu tools.  This works for the tools installed
+# by Ubuntu with this command
+# sudo apt-get install gcc-arm-linux-gnueabi
+export CC=arm-linux-gnueabi-
+# Don't need to change this
+export ARCH="arm"
+
