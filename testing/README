@@ -1,0 +1,15 @@
+The file bqdevice is a copy of the /dev/bq76pl536 device.  You can read
+from it and it will produce the same data as the actual device.
+
+The file dumpbq reads from standard input and prints formatted text
+showing the data from the driver.
+
+Here is an example:
+
+cat bqdevice | ./dumpbq.pl
+2.98 3.00 3.00 3.00 3.00 3.00 3.00 3.00 3.00 3.00
+3.00 3.00 2.96 2.96 2.96 2.96 2.96 2.96
+Chip Cells Temperature Status Alert Fault Under Over
+ 1   6     20   20     a1     80     0     0     0
+ 2   6     20   19     a1     80     0     0     0
+ 3   6     19   19     a1     80     0     0     0

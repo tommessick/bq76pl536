@@ -1,2 +1,3 @@
-The code to go along with an article here http://www.jumpnowtek.com
-
+This is a linux driver for the Texas Instruments bq76pl536 battery monitor chip.
+It is still a little rough around the edges.  It has only been tested with Ubuntu
+running on a Beaglebone board.
